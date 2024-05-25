@@ -8,27 +8,32 @@ const FeatureSection = () => {
                 <span className="bg-neutral-900 text-orange-500 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase">
                     feature
                 </span>
-                <h2 className="text-3xl sm:text-5xl md:text-6xl mt-10 md:mt-20 tracking-wide">
+                <h2 className="text-3xl sm:text-5xl md:text-6xl mt-10 md:mt-20 tracking-wide dark:text-white">
                     Easily build
                     <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
-                        {" "} your code
+                        {" "}
+                        your code
                     </span>
                 </h2>
             </div>
             <div className="flex flex-wrap mt-10 md:mt-20">
-                {features.map((feature, index) =>
+                {features.map((feature, index) => (
                     <div key={index} className="w-full sm:1/2 md:w-1/3">
                         <div className="flex">
                             <div className="flex mx-6 h-10 w-10 p-2 bg-neutral-900 text-orange-700 justify-center items-center rounded-full">
                                 {feature.icon}
                             </div>
                             <div>
-                            <h5 className="mt-1 mb-6 text-xl">{feature.text}</h5>
-                                <p className="text-neutral-500 text-md p-2 mb-20">{feature.description}</p>
+                                <h5 className="mt-1 mb-6 text-xl dark:text-white">
+                                    {feature.text}
+                                </h5>
+                                <p className="text-neutral-500 text-md p-2 mb-20">
+                                    {feature.description}
+                                </p>
                             </div>
                         </div>
                     </div>
-                )}
+                ))}
             </div>
         </div>
     );

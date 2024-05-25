@@ -4,7 +4,9 @@ const Footer = () => {
         <footer className="mt-20 border-t border-neutral-700 py-10">
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div>
-                    <h3 className="text-md font-semibold mb-4">Resources</h3>
+                    <h3 className="text-md font-semibold mb-4 dark:text-white">
+                        Resources
+                    </h3>
                     <ul className="space-y-2">
                         {resourcesLinks.map((link, index) => (
                             <li key={index}>
@@ -20,7 +22,9 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h3 className="text-md font-semibold mb-4">Platforma</h3>
+                    <h3 className="text-md font-semibold mb-4 dark:text-white">
+                        Platforma
+                    </h3>
                     <ul className="space-y-2">
                         {platformLinks.map((link, index) => (
                             <li key={index}>
@@ -36,7 +40,9 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h3 className="text-md font-semibold mb-4">Platforma</h3>
+                    <h3 className="text-md font-semibold mb-4 dark:text-white">
+                        Platforma
+                    </h3>
                     <ul className="space-y-2">
                         {communityLinks.map((link, index) => (
                             <li key={index}>
@@ -51,6 +57,9 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
+            <p className="text-neutral-300 text-center mt-6">
+                &copy; 2024. Todos los derechos reservados
+            </p>
         </footer>
     );
 };
